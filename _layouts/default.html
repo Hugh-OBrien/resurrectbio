@@ -1,0 +1,23 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+
+    {% include hero.html %}
+    
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+      {% include about.html %}
+      {% include technology.html %}
+      {% include contact.html %}
+    </div>
+    <!--Footer begins here-->
+    <!-- {% include footer.html %} -->
+  </body>
+</html>
