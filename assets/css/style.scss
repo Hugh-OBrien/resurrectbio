@@ -12,7 +12,8 @@ $secondary-color-light: #48a999;
 $secondary-color-dark: #004c40;
 
 $about-bg-color: #12170a;
-$contact-bg-color: $secondary-color;
+$technology-bg-color: white;
+$contact-bg-color: $about-bg-color;
 
 $main-text-color: black;
 
@@ -21,7 +22,13 @@ html {
 }
 
 footer {
-  background-color: $primary-color-dark;
+  background-color: $contact-bg-color;
+  color: white;
+}
+
+#contact {
+  background-color: $contact-bg-color;
+  color: white;
 }
 
 #navbar {
@@ -41,6 +48,10 @@ section {
 
 .section-header {
   font-size: 3rem;
+}
+
+.subsection-header {
+  margin-bottom: 20px;
 }
 
 .jumbotron {
@@ -66,6 +77,10 @@ section {
   border: none;
   right: 0;
   left: auto;
+}
+
+#nav-title-img {
+  height: 2rem;
 }
 
 ul.navbar-nav {
@@ -115,10 +130,13 @@ a.nav-link.active {
   color: white;
 }
 
-#contact {
-  background-color: $contact-bg-color;
-
+#technology {
+  background-color: $technology-bg-color;
+  @media (max-width: 768px) {
+    padding-bottom: 0px;
+  }
 }
+
 #blog {
     .hero-body {
         padding: 3rem 0.25rem 1rem 0.25rem;
@@ -245,4 +263,115 @@ a.nav-link.active {
             display: inline-block;
         }
     }
+}
+
+hr {
+  border-top: 1px solid $primary-color-light;
+}
+
+.circle-cropper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.rect-cropper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin: auto;
+
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.centralised {
+  margin: auto;
+}
+
+.mission-statement {
+  text-align: center;
+}
+
+#happy-soy {
+  background-image: url("{{ 'assets/images/happy_soy_sm.jpeg' | absolute_url }}");
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    border-radius: 1rem;
+  }
+}
+
+#much-soy {
+  background-image: url("{{ 'assets/images/much_soy.jpeg' | absolute_url }}");
+  background-size: cover;
+
+  min-height: 100px;
+
+  @media (min-width: 768px) {
+    border-radius: 1rem;
+  }
+}
+
+#card-img-goal-1 {
+  background-image: url("{{ 'assets/images/very_little_soy.jpeg' | absolute_url }}");
+  background-size: cover;
+}
+
+.goal-card {
+  width: 100%;
+  margin-top: 15px;
+  border: 1px solid $primary-color;
+  border-radius: 0.0rem;
+  
+  @media (min-width: 768px) {
+    border-radius: 0.5rem;
+  }  
+
+  .card-header {
+    background-color: rgba($primary-color-dark, 0.5);
+    border-bottom: none;
+    border-radius: 0.0rem;
+    @media (min-width: 768px) {
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn-primary:hover {
+  background-color: $primary-color-dark;
+  border-color: $primary-color-dark;
+}
+
+#email-button {
+  margin-left: 5px;
+}
+
+#why-list {
+  li {
+    margin-bottom: 10px;
+  }
 }
