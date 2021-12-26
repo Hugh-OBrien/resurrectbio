@@ -104,7 +104,6 @@ section:before {
 
 .animate-background:before {
   content: ' ';
-  height: 100vh;
   display: block;
   position: absolute;
   left: 0;
@@ -115,7 +114,8 @@ section:before {
 
   background-image: url("{{ 'assets/images/soy-beans-fade.jpg' | absolute_url }}");
   background-position: center;
-  background-repeat: round;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   -webkit-animation: fadein $jumbotron-fade-time; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein $jumbotron-fade-time; /* Firefox < 16 */
