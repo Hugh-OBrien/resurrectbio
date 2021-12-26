@@ -1,8 +1,10 @@
 <nav class="navbar fixed-top navbar-light navbar-expand-lg" id="navbar">
   <div class="container">
-    <a class="navbar-brand" href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+    <div id="hero" class="col-3">
+      <a class="navbar-brand" href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
       <img id="nav-title-img" src="./assets/images/logo/colour.png">
-    </a>
+      </a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

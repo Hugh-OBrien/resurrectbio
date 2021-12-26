@@ -1,9 +1,26 @@
-<div class="jumbotron jumbotron-fluid">
+<script>
+ function fadeIn() {
+   var jumbotron = document.getElementById("jumbotron");
+   jumbotron.className =  jumbotron.className + " animate-background";
+
+   setTimeout(() => {
+     var heroText = document.getElementById("hero-text");
+     heroText.className="animate";
+     heroText.style.opacity=1;
+     const heroLogo = document.getElementById("hero-logo");
+     heroLogo.className="animate";
+     heroLogo.style.opacity=1;
+   }, 1000)
+ } 
+</script>
+
+<img id="fake-background" src="./assets/images/soy-beans-fade.jpg" onload="fadeIn()">
+<div id="jumbotron" class="jumbotron jumbotron-fluid"">
   <div class="container">
     <row class="align-items-center">
       <div id="hero" class="col-12">
         <img id="hero-logo" src="./assets/images/logo/white.png">
-        <p>Resurrecting the immune system of crops for sustainable agriculture.</p>
+        <p id="hero-text">Resurrecting the immune system of crops for sustainable agriculture.</p>
       </div>
     </row>
   </div>
