@@ -1,0 +1,22 @@
+<section id="team">
+  <div class="container">
+    <div class="section-header"> Leadership Team </div>
+    <div class="row">
+
+      {% for member in site.data.team %}
+      <div class="col-md-4 team-member">
+        <div class="circle-cropper-team">
+          <img alt="{{member.name}}" src="./assets/{{ member.avatar }}" >
+        </div>
+        <h3>{{member.name}}</h3>
+        <hr/>
+        <p>{{member.position}}</p>
+        {% for sub in member.sub %}
+        <img class="sub-image" alt="" src="./assets/{{ sub }}" >
+        {% endfor %}        
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

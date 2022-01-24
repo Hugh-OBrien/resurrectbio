@@ -1,0 +1,15 @@
+- avatar: images/team/cian.jpg
+  name: Dr Cian Duggan
+  position: CEO / Co-Founder
+
+- avatar: images/team/tolga.jpg
+  name: Dr Tolga Bozkurt
+  position: Co-Founder
+  sub:
+    - images/team/imperial.png
+
+- avatar: images/team/sophien.jpg
+  name: Prof Sophien Kamoun
+  position: Senior Scientific Advisor and Director
+  sub:
+    - images/team/sainsbury.png
