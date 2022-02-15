@@ -17,7 +17,7 @@ title: Resurrect Bio
 email: info@resurrect.bio
 
 description: Resurrect Bio is a plant biotech start-up, based in London. We will improve the immune system of crop species.
-site-image: assets/images/preview.jpg
+site-image: /assets/images/preview.jpg
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
