@@ -1,5 +1,5 @@
 ---
----
+--- 
 
 @import 'bootstrap/bootstrap';
 
@@ -24,8 +24,8 @@ html {
 footer {
   background-color: $contact-bg-color;
   color: white;
-  text-align:center;
-  
+  text-align: center;
+
   hr {
     border-top: 1px solid white;
   }
@@ -40,10 +40,11 @@ footer {
       max-width: 70%;
     }
   }
+
   .footer-copyright {
     p {
       margin-bottom: 0.5rem;
-      
+
     }
   }
 
@@ -52,6 +53,7 @@ footer {
     border-color: $secondary-color;
     margin-left: 5px;
   }
+
   #email-button:hover {
     background-color: $secondary-color;
     border-color: $secondary-color;
@@ -70,14 +72,14 @@ footer {
 section {
   padding-top: 10px;
   padding-bottom: 40px;
-  
+
 }
 
 /* This is to offset the scroll from the nav  */
 section:before {
   height: 54px;
   content: "";
-  display:block;
+  display: block;
 }
 
 .section-header {
@@ -124,40 +126,69 @@ section:before {
   background-repeat: no-repeat;
   background-size: cover;
 
-  -webkit-animation: fadein $jumbotron-fade-time; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein $jumbotron-fade-time; /* Firefox < 16 */
-  -ms-animation: fadein $jumbotron-fade-time; /* Internet Explorer */
-  -o-animation: fadein $jumbotron-fade-time; /* Opera < 12.1 */
+  -webkit-animation: fadein $jumbotron-fade-time;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein $jumbotron-fade-time;
+  /* Firefox < 16 */
+  -ms-animation: fadein $jumbotron-fade-time;
+  /* Internet Explorer */
+  -o-animation: fadein $jumbotron-fade-time;
+  /* Opera < 12.1 */
   animation: fadein $jumbotron-fade-time;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 
@@ -176,21 +207,26 @@ section:before {
   #hero-text {
     opacity: 0;
   }
-  
+
   p {
     padding-left: 72px;
+
     @media (max-width: 768px) {
       text-align: center;
       padding-left: 0px;
     }
-  }  
+  }
 }
 
 .animate {
-  -webkit-animation: fadein $jumbotron-fade-time; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein $jumbotron-fade-time; /* Firefox < 16 */
-  -ms-animation: fadein $jumbotron-fade-time; /* Internet Explorer */
-  -o-animation: fadein $jumbotron-fade-time; /* Opera < 12.1 */
+  -webkit-animation: fadein $jumbotron-fade-time;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein $jumbotron-fade-time;
+  /* Firefox < 16 */
+  -ms-animation: fadein $jumbotron-fade-time;
+  /* Internet Explorer */
+  -o-animation: fadein $jumbotron-fade-time;
+  /* Opera < 12.1 */
   animation: fadein $jumbotron-fade-time;
 }
 
@@ -210,7 +246,7 @@ ul.navbar-nav {
 
 li.nav-item {
   @media (min-width: 768px) {
-    width: 33.3%; 
+    width: 33.3%;
   }
 }
 
@@ -224,7 +260,7 @@ a.nav-link {
 
 a.nav-link:hover,
 .nav-link:hover {
-  color: $secondary-color !important;
+  color: $secondary-color  !important;
 }
 
 a.nav-link.active {
@@ -242,7 +278,8 @@ a.nav-link.active {
 }
 
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
   color: black;
 }
 
@@ -253,6 +290,7 @@ a.nav-link.active {
 
 #technology {
   background-color: $technology-bg-color;
+
   @media (max-width: 768px) {
     padding-bottom: 0px;
   }
@@ -266,10 +304,10 @@ a.nav-link.active {
   text-align: center;
   padding-bottom: 40px;
 
-  .section-header{
+  .section-header {
     margin-bottom: 30px;
   }
-  
+
   #host {
     @media (min-width: 768px) {
       text-align: right;
@@ -282,7 +320,7 @@ a.nav-link.active {
 
     }
   }
-  
+
   #support-logo {
     max-width: 50%;
     display: block;
@@ -378,18 +416,23 @@ a.nav-link.active {
   @media (min-width: 768px) {
     margin: auto 2.5vmax;
   }
+
   a {
     text-decoration: underline;
   }
+
   #title {
     text-decoration: none;
   }
+
   .title {
     margin: auto;
   }
+
   #post-image {
     border-radius: 0.25rem;
   }
+
   .subtitle {
     letter-spacing: 0.05rem;
   }
@@ -401,21 +444,31 @@ a.nav-link.active {
   .tag {
     margin: 0.15rem auto;
   }
+
   .content {
-    ol, ul, blockquote {
+
+    ol,
+    ul,
+    blockquote {
       display: inline-block;
     }
-    hr{
+
+    hr {
       background-color: grey;
     }
-    img, iframe {
+
+    img,
+    iframe {
       max-width: calc(100% - 25vw);
       margin: 0.25rem auto;
+
       @media (max-width: 768px) {
         max-width: calc(100% - 5vw);
       }
     }
-    ul, ol {
+
+    ul,
+    ol {
       display: inline-block;
     }
   }
@@ -429,7 +482,10 @@ a.nav-link.active {
 
 #page-section {
   .content {
-    ul, ol, blockquote {
+
+    ul,
+    ol,
+    blockquote {
       display: inline-block;
     }
   }
@@ -515,17 +571,18 @@ hr {
   width: 100%;
   margin-top: 15px;
   border-radius: 0.0rem;
-  
+
   @media (min-width: 768px) {
     border-radius: 0.5rem;
     border: 1px solid $primary-color;
-  }  
+  }
 
   .card-header {
     background-color: rgba($primary-color, 0.9);
     color: white;
     border-bottom: none;
     border-radius: 0.0rem;
+
     @media (min-width: 768px) {
       border-radius: 0.5rem 0.5rem 0 0;
     }
@@ -544,7 +601,7 @@ hr {
 
 #why {
   margin-bottom: 20px;
-  
+
   @media (max-width: 768px) {
     margin-bottom: 0px;
   }
@@ -559,6 +616,7 @@ hr {
 #team {
   background-color: $team-bg-color;
   color: white;
+
   .row {
     text-align: center;
   }
@@ -566,7 +624,7 @@ hr {
   .section-header {
     margin-bottom: 20px;
   }
-  
+
   .sub-image {
     width: 100px;
   }
@@ -574,7 +632,7 @@ hr {
   .team-member {
     padding-bottom: 20px;
   }
-  
+
   .circle-cropper-team {
     width: 200px;
     height: 200px;
@@ -591,4 +649,47 @@ hr {
       width: auto;
     }
   }
+}
+
+.careers {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  min-height: 10vh;
+}
+
+#jobs {
+  min-height: 60vh;
+
+  .job-card {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 0.0rem;
+  
+    .card-body {
+      background-color: rgba($primary-color, 0.9);
+      color: white;
+      border-bottom: none;
+      border-radius: 0.0rem;
+    }
+
+    #apply-button {
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      margin-left: 5px;
+    }
+  
+    #apply-button:hover {
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+    }    
+  }
+
+  #eoi {
+    margin-top: 20px;
+
+    #eoi-button {
+      float: right;
+    }
+  }
+  
 }

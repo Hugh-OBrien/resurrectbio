@@ -13,8 +13,64 @@ layout: compress
     <div class="container careers">
         <div class=" section-header"> Careers at Resurrect Bio </div>
         <div class="row">
+            <p>
+                Resurrect Bio is a plant biotech start-up, based in London. We're building a team to improve the immune
+                system of crop species.
+            </p>
+
+            <p>
+                We want Resurrect Bio to be a great place to work for all kinds of people. With that in mind, for all
+                our roles we carry out a hiring process with equal opportunities as the priority and have a focus on
+                eliminating unconscious bias.
+            </p>
         </div>
+
     </div>
+
+    <section id="jobs">
+
+        <div class="container">
+
+            <div class="section-header"> Current Roles </div>
+            {% for job in site.data.jobs %}
+
+            <div class="card job-card">
+                <div class="card-body">
+                    <h3 class="card-title"> {{ job.title }} </h3>
+
+                    <p class="card-text">
+
+                    </p>
+
+                    <a id="apply-button" target="_blank" rel="noreferrer noopener" class="btn btn-primary" type="button"
+                        href="{{job.link}}" class="btn btn-primary">Read More and Apply Now</a>
+
+                </div>
+            </div>
+
+
+            {% endfor %}
+
+        </div>
+        <div class="container" id="eoi">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        Don't see an opening for you? We have a number of positions coming up soon and are always keen
+                        to hear from exceptional people.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <a id="eoi-button" target="_blank" rel="noreferrer noopener" class="btn btn-primary" type="button"
+                        href="https://forms.gle/V7AsL6Y9D4ZgwJtT6" class="btn btn-primary">Express Your Interest</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
 
     {% include footer.html %}
 </body>
