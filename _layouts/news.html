@@ -1,0 +1,40 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+
+    {% include navbar.html %}
+
+    <section id="news">
+
+        <div class="container careers">
+            <div class=" section-header"> Resurrect Bio News and Press Releases </div>
+            <hr />
+            <div>
+                {% for post in site.posts %}
+                <div class="post-listing">
+                    <h3>
+                        <a href="{% if post.permalink %}{{post.permalink}}{% else %}{{post.url}}{% endif %}">{{
+                            post.title }}</a> | {{ post.date | date: "%-d %B %Y" }}
+                    </h3>
+                    {{ post.excerpt }}
+                </div>
+                <hr />
+
+                {% endfor %}
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+
+    {% include footer.html %}
+</body>
+
+</html>

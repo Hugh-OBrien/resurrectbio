@@ -693,3 +693,16 @@ hr {
   }
   
 }
+
+#news {
+  min-height: 80vh;
+
+  a {
+    color: $secondary-color;
+  }
+
+  .post-listing {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
